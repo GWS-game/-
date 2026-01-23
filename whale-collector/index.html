@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Whale Collector</title>
+
+  <!-- 기본 메타 -->
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#020b18" />
+
+  <!-- 파비콘 -->
+  <link rel="icon" href="./favicon.png" />
+
+  <!-- (선택) PWA -->
+  <!--
+  <link rel="manifest" href="./manifest.json" />
+  -->
+
+  <!-- 스타일 -->
+  <link rel="stylesheet" href="./style/main.css" />
+
+  <!-- Phaser (CDN, 무료, 제한 없음) -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+</head>
+
+<body>
+  <!-- 게임 캔버스는 Phaser가 자동 생성 -->
+  <noscript>
+    이 게임을 실행하려면 JavaScript가 필요합니다.
+  </noscript>
+
+  <!-- 게임 시작 스크립트 -->
+  <script type="module">
+    import "./src/core/Game.js";
+  </script>
+</body>
+</html>
 

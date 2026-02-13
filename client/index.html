@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle Arena Online</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+  </head>
+  <body>
+    <div id="ui">
+      <button id="googleLogin">Google 로그인</button>
+      <select id="characterSelect">
+        <option value="striker">Striker (투사체)</option>
+        <option value="nova">Nova (원형 범위)</option>
+        <option value="dash">Dash (돌진)</option>
+      </select>
+      <button id="saveProfile">캐릭터 저장</button>
+      <button id="joinPve">PvE 시작</button>
+      <button id="joinPvp">PvP 매칭</button>
+      <span id="status">로그인 필요</span>
+    </div>
+    <canvas id="game" width="1280" height="720"></canvas>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
